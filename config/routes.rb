@@ -1,4 +1,8 @@
 OmrailsMoments::Application.routes.draw do
+  # setting root to home.  not get pages/home (get "pages/home")
+  get "about"=> 'pages#about'
+  root :to => 'pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
